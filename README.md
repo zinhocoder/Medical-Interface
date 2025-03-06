@@ -60,6 +60,9 @@ pnpm dev
 
 Acesse a aplicação em [http://localhost:3000](http://localhost:3000).
 
+# ou
+Diretamente pelo deploy [https://medical-interface-1je9.vercel.app/]
+
 ## Desenvolvimento
 
 ### Padrões de Código
