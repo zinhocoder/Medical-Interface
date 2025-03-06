@@ -1,0 +1,47 @@
+/**
+ * Estilos para a timeline
+ */
+
+.timeline-container {
+  position: relative;
+  padding-left: 24px;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 24px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #d9d9d9;
+  z-index: 0;
+}
+
+.load-more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.load-more-button {
+  display: flex;
+  align-items: center;
+  color: #7e84a3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+  font-family: var(--font-nunito), sans-serif;
+  font-weight: 500;
+}
+
+.load-more-button:hover {
+  color: #3248f2;
+}
+
+.arrow-icon {
+  margin-left: 4px;
+}
+

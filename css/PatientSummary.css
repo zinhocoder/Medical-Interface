@@ -1,0 +1,51 @@
+/**
+ * Estilos para o card de resumo do paciente
+ */
+
+.patient-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.patient-info {
+  display: flex;
+}
+
+.patient-photo {
+  margin-right: 24px;
+}
+
+.patient-photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.patient-details {
+  flex: 1;
+}
+
+.patient-name {
+  color: #1e5eff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.patient-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.data-column p {
+  color: #5a607f;
+  margin-bottom: 8px;
+}
+

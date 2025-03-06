@@ -1,0 +1,144 @@
+/**
+ * Estilos para as entradas da timeline
+ */
+
+.timeline-entry {
+  display: flex;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 1;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+/* Caixa de data */
+.date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4f92ed;
+  color: white;
+  text-align: center;
+  margin-right: 24px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.date-day {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.date-month {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  font-weight: 600;
+}
+
+.date-year {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+/* Conteúdo da entrada */
+.entry-content {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.doctor-name {
+  color: #5a607f;
+  font-weight: 500;
+}
+
+.entry-duration {
+  display: flex;
+  align-items: center;
+  color: #5a607f;
+  gap: 4px;
+}
+
+/* Corpo da entrada */
+.entry-body {
+  padding: 16px;
+}
+
+.entry-title-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1rem;
+  color: #5a607f;
+  margin-bottom: 8px;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.entry-description-input {
+  width: 100%;
+  min-height: 200px;
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  font-size: 1rem;
+  color: #5a607f;
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.entry-title {
+  color: #1e5eff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.entry-description {
+  color: #5a607f;
+  line-height: 1.5;
+}
+
+/* Rodapé da entrada */
+.entry-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.entry-action-button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7e84a3;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.entry-action-button:hover {
+  background-color: #f5f6fa;
+  color: #3248f2;
+}
+

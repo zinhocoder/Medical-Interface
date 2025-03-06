@@ -1,0 +1,222 @@
+/**
+ * Estilos globais da aplicação
+ */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-nunito), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Container principal */
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f6fa;
+}
+
+/* Conteúdo principal */
+.main-content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #f5f6fa;
+}
+
+.content-title {
+  font-size: 1.25rem;
+  color: #5a607f;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+/* Modais */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Estilos para o modal de prescrição */
+.prescription-modal,
+.documentation-modal {
+  background-color: white;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.prescription-header,
+.documentation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+}
+
+.prescription-header h2,
+.documentation-header h2 {
+  color: #5a607f;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #7e84a3;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.close-button:hover {
+  color: #5a607f;
+}
+
+.prescription-divider,
+.documentation-divider {
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+.prescription-form,
+.documentation-form {
+  padding: 24px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.form-group label {
+  display: block;
+  color: #5a607f;
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #5a607f;
+}
+
+.prescription-container,
+.description-container {
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  height: 400px;
+  margin-top: 24px;
+}
+
+.prescription-textarea,
+.description-textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  padding: 16px;
+  color: #5a607f;
+  outline: none;
+  font-family: var(--font-nunito), monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.prescription-footer,
+.documentation-footer {
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #d9d9d9;
+}
+
+.left-actions,
+.right-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-button.secondary {
+  background-color: #f5f6fa;
+  color: #5a607f;
+  border: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action-button.secondary-outline {
+  background-color: white;
+  color: #1e5eff;
+  border: 1px solid #1e5eff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.action-button.primary {
+  background-color: #1e5eff;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #7e84a3;
+  pointer-events: none;
+}
+
+.form-select {
+  width: 200px;
+  appearance: none;
+  padding: 12px;
+  padding-right: 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  color: #5a607f;
+}
+

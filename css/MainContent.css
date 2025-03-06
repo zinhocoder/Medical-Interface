@@ -1,0 +1,35 @@
+/**
+ * Estilos para o conteúdo principal
+ */
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #f5f6fa;
+  padding: 1.5rem;
+  margin-left: 330px; /* Soma da largura da sidebar (90px) e da seção de prontuário (240px) */
+  font-family: var(--font-nunito), sans-serif;
+}
+
+.content-title {
+  font-size: 1.25rem;
+  color: #5a607f;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .main-content {
+    margin-left: 300px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 240px;
+    padding: 0.75rem;
+  }
+}
+
