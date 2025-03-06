@@ -31,8 +31,8 @@ Um sistema moderno de prontuário médico desenvolvido com Next.js, React e Tail
 1. Clone o repositório:
 
 \`\`\`bash
-git clone https://github.com/seu-usuario/medicalinterface2121.git
-cd medicalinterface2121
+git clone https://github.com/zinhocoder/Medical-Interface.git
+cd medical-interface
 \`\`\`
 
 2. Instale as dependências:
