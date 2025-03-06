@@ -20,7 +20,6 @@ import DocumentationModal from "./components/DocumentationModal"
 import "./css/App.css"
 
 // Importação da fonte Nunito (alternativa para projetos sem Next.js)
-// Descomente se estiver usando um projeto React puro sem Next.js
 // import '@fontsource/nunito/400.css';
 // import '@fontsource/nunito/500.css';
 // import '@fontsource/nunito/600.css';
